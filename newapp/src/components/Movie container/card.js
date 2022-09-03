@@ -20,7 +20,7 @@ function MovieCard() {
                                     <Card.Text>
                                         Fear Street tells a story of a circle of teenage friends who accidnently encounter the ancient evil, who is responsible for a series of brutal murders. 
                                     </Card.Text>
-                                <Button variant="primary">Review</Button>
+                                <Button variant="primary" className='Button'>Review</Button>
                             </Card.Body>
                             <StarRating />
                         </Card>
@@ -33,7 +33,7 @@ function MovieCard() {
                                     <Card.Text>
                                         Friday the 13th relates the story of a serial killer named Jason who is out for revenge.
                                     </Card.Text>
-                                <Button variant="primary">Review</Button>
+                                <Button variant="primary" className='Button'>Review</Button>
                             </Card.Body>
                             <StarRating />
                         </Card>
@@ -48,7 +48,7 @@ function MovieCard() {
                                     <Card.Text>
                                         Years after murdering his sister on Halloween, Micheal Myers escapes the mental hospital he's been living in since and returns to kill again. 
                                     </Card.Text>
-                                <Button variant="primary">Review</Button>
+                                <Button variant="primary" className='Button'>Review</Button>
                             </Card.Body>
                             <StarRating />
                         </Card>
@@ -61,7 +61,7 @@ function MovieCard() {
                                     <Card.Text>
                                         Children in the town of Derry ban together to destroy a shape-shifting monster, which disguises itself as a clown and preys on their fears. 
                                     </Card.Text>
-                                <Button variant="primary">Review</Button>
+                                <Button variant="primary" className='Button'>Review</Button>
                             </Card.Body>
                             <StarRating />
                         </Card>
@@ -76,7 +76,7 @@ function MovieCard() {
                                     <Card.Text>
                                         Two siblings driving through the countryside for spring break encounter a monster that feeds on humans.
                                     </Card.Text>
-                                <Button variant="primary">Review</Button>
+                                <Button variant="primary" className='Button'>Review</Button>
                             </Card.Body>
                             <StarRating/>
                         </Card>
@@ -89,7 +89,7 @@ function MovieCard() {
                                     <Card.Text>
                                         Nancy Thompson uncovers her parents truth after she and her friends become targets of the spirit of a serial killer. 
                                     </Card.Text>
-                                <Button variant="primary">Review</Button>
+                                <Button variant="primary" className='Button'>Review</Button>
                             </Card.Body>
                             <StarRating />
                         </Card>

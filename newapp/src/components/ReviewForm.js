@@ -1,61 +1,71 @@
+import { useState } from "react";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
+export default function NewApp() {
+  const [inputValues, setInputValues] = useState({});
+  const [counter, setCounter] = useState(0);
 
-import React from "react";
+  const handleClick = () => {
+    setCounter(counter + 1);
+    console.log(counter);
+  };
 
-export default class ReviewForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      numberOfMovies: 6,
-    };
-    this.handleInputChange = this.handleInputChange.bind(this);
-  }
+  const handleOnChange = (e) => {
+    const abc = {};
+    abc[e.target.className] = e.target.value;
+    setInputValues({ ...inputValues, ...abc });
+  };
 
-  handleInputChange(event) {
-    const target = event.target;
-    const value = target.type === "checkbox" ? target.checked : target.value;
-    const name = target.name;
-    this.setState({
-      [name]: value,
-    });
-  }
+  return (
+    <div className="NewApp">
+      <button id="submit" type="submit" onClick={handleClick}>Submit Review</button>
 
-  render() {
-    return (
-        <><div className="mb-3">
-            <label htmlFor="exampleFormControlInput1" 
-            className="form-label">Movie Name</label >
-            <input type="movieName" className="form-control" 
-            id="textLabel" name="reviewMovie"
-            checked={this.state.reviewMovie} onChange={this.handleInputChange}
-            placeholder="type movie title here">
-            </input>.
-            </div>
-            <div className="mb-3">
-                <label htmlFor="exampleFormControlTextarea1" 
-                className="form-label">Type Review Here</label>
-                <textarea className="form-control" id="textLabel" rows="6"></textarea> 
-                {/* <input name="writtenReview" type="text" 
-                checked={this.state.writtenReview} onChange={this.handleInputChange} /> */}
-         
-            </div></>
-    );
-  }
+      {Object.keys(inputValues).map((c) => {
+        return <p>{inputValues[c]}</p>;
+      })}
+
+      {Array.from(Array(counter)).map((c, index) => {
+        return (
+          <><Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Name</Form.Label>
+              <Form.Control type="text" placeholder="Your Name" 
+              onChange={handleOnChange}
+              key={c}
+              className={index}/>
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="name@example.com"
+              onChange={handleOnChange}
+              key={c}
+              className={index} />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Movie Name</Form.Label>
+              <Form.Control type="text" placeholder="Movie Name" 
+                onChange={handleOnChange}
+                key={c}
+                className={index}/>
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+              <Form.Label>Type Review Here</Form.Label>
+              <Form.Control as="textarea" rows={5} 
+                onChange={handleOnChange}
+                key={c}
+                className={index}/>
+            </Form.Group>
+          </Form></>
+          );}
+        )
+      }
+    </div>
+  );
 }
-/*  <label>
-                Move List:
-                <input 
-                name="letsWatch"
-                type="Romance"
-                checked={this.state.letsWatch}
-                onChange={this.handleInputChange}/>
-            </label>
-            <br/>
-            <label>
-                Rating:
-                <input
-                name="numberOfStars"
-                type="number"
-                value={this.state.numberOfStars}
-                onChange={this.handleInputChange} />
-            </label> */
+        
+    
+   
+  
+
+            

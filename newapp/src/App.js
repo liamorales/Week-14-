@@ -19,7 +19,7 @@ function AppStructure() {
         <Row>
           <Col>
             <ReviewForm />
-            <Button type="submit">Submit</Button>
+            <div></div>
             <MovieCard />
           </Col>
         </Row>

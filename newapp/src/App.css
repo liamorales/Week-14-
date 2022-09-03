@@ -8,6 +8,7 @@ button {
   outline: black;
   cursor: pointer;
   color:yellow;
+  padding-bottom: 7em;
 }
 .on {
   color:yellowgreen;
@@ -27,4 +28,21 @@ button {
 }
 .textLabel{
   color:aliceblue
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+#submit {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
 }

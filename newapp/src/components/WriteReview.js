@@ -5,7 +5,6 @@ import MovieCard from './Movie container/card'
 
 
 
-
 export default class NewApp extends Component {
     constructor(props)
     super(props)
@@ -51,6 +50,6 @@ export default class NewApp extends Component {
 
 }
 
-function newFunction() {
+function NewApp() {
     return this
 }
