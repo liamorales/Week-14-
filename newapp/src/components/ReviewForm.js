@@ -22,21 +22,21 @@ export default class ReviewForm extends React.Component {
 
   render() {
     return (
-        <><div class="mb-3">
-            <label for="exampleFormControlInput1" 
-            class="form-label">Movie Name</label>
-            <input type="movieName" class="form-control" 
-            id="exampleFormControlInput1" name="reviewMovie"
+        <><div className="mb-3">
+            <label htmlFor="exampleFormControlInput1" 
+            className="form-label">Movie Name</label >
+            <input type="movieName" className="form-control" 
+            id="textLabel" name="reviewMovie"
             checked={this.state.reviewMovie} onChange={this.handleInputChange}
             placeholder="type movie title here">
             </input>.
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" 
-                class="form-label">Type Review Here</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea> 
-                <input name="writtenReview" type="text" 
-                checked={this.state.writtenReview} onChange={this.handleInputChange} />
+            <div className="mb-3">
+                <label htmlFor="exampleFormControlTextarea1" 
+                className="form-label">Type Review Here</label>
+                <textarea className="form-control" id="textLabel" rows="6"></textarea> 
+                {/* <input name="writtenReview" type="text" 
+                checked={this.state.writtenReview} onChange={this.handleInputChange} /> */}
          
             </div></>
     );

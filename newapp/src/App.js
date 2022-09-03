@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import ReviewForm from './components/ReviewForm';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import StarRating from './components/StarRating';
+import MovieCard from './components/Movie container/card';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+
+function AppStructure() {
+  return(
+    <><Container>
+      <div>
+        <Row>
+          <Col>
+            <ReviewForm />
+            <Button type="submit">Submit</Button>
+            <MovieCard />
+          </Col>
+        </Row>
+      </div>
+    </Container></>
+    
   );
 }
 
-export default App;
+const App=()=> {
+  return (
+    <div clasName="App">
+      <StarRating />
+    </div>
+  );
+};
+
+export default AppStructure;
