@@ -8,13 +8,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import StarRating from './components/StarRating';
 import MovieCard from './components/Movie container/card';
-
+import NewApp2 from './components/testform';
 
 
 
 function AppStructure() {
   return(
     <><Container>
+      <NewApp2 />
       <div>
         <Row>
           <Col>

@@ -10,7 +10,7 @@ const StarRating = () => {
       index += 1;
       return(
         <button
-        type="button"
+        type="starbutton"
         key={index}
         className= {index <= (rating && hover) ? "on" : "off"}
         onClick= {() => setRating(index)}

@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/esm/Container';
 import StarRating from '../StarRating';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import NewApp2 from '../testform';
 
 
 function MovieCard() {
@@ -23,6 +24,7 @@ function MovieCard() {
                                 <Button variant="primary" id="formButton" className='Button'>Review</Button>
                             </Card.Body>
                             <StarRating />
+                            <NewApp2 />
                         </Card>
                     </Col>
                     <Col sm="6">

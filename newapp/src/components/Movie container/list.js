@@ -6,6 +6,7 @@ class List extends Component {
     constructor(props) {
           super(props)
           this.state = {
+              mymovieName: props.movieName,
            data: [],
             loading: true,
              };
@@ -23,7 +24,7 @@ class List extends Component {
         
      }
      render(){
-         const {data, loading} =this.state;
+         const {data, loading} =this.state.mymovieName;
          if (loading){
              return <div>Loading...</div>;
          }
