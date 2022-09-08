@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import Form from 'react-bootstrap/Form';
 import Button from "react-bootstrap/esm/Button";
 import Container from "react-bootstrap/esm/Container";
-import FormOutput from "./FormOutput";
+import FormOut from "./FormOutput";
+
 
 export default function NewApp() {
     const values = [
@@ -46,7 +47,7 @@ function NameForm (event){
         Submit
       </Button>
     </Form>
-    <FormOutput />
+    <FormOut />
     
     </div>
     )      
